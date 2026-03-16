@@ -538,6 +538,49 @@ section {
     border: 2px solid #0563bb;
   }
 
+  .resume .position-item h4 {
+    text-transform: none;
+    line-height: 1.25;
+    margin-bottom: 4px;
+  }
+
+  .resume .position-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .resume .position-location {
+    margin: 0 0 10px;
+    color: #728394;
+  }
+
+  .resume .position-role {
+    margin: 0 0 12px;
+    font-weight: 600;
+    color: #45505b;
+  }
+
+  .resume .position-item ul {
+    margin-bottom: 0;
+  }
+
+  .resume .position-item ul li strong {
+    color: #45505b;
+  }
+
+  @media (max-width: 768px) {
+    .resume .position-head {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .resume .position-head h5 {
+      margin-bottom: 12px;
+    }
+  }
+
   /*--------------------------------------------------------------
   # Portfolio
   --------------------------------------------------------------*/
