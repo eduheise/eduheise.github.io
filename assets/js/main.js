@@ -42,6 +42,23 @@
   }
 
   /**
+   * Show header only after scrolling past the hero section
+   */
+  let header = select('#header')
+  let aboutSection = select('#about')
+  if (header && aboutSection) {
+    const toggleHeader = () => {
+      if (window.scrollY >= aboutSection.offsetTop - 100) {
+        header.classList.add('header-visible')
+      } else {
+        header.classList.remove('header-visible')
+      }
+    }
+    window.addEventListener('load', toggleHeader)
+    onscroll(document, toggleHeader)
+  }
+
+  /**
    * Navbar links active state on scroll
    */
   let navbarlinks = select('#navbar .scrollto', true)
