@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         value: 50,
         density: { enable: true, area: 900 },
       },
-      color: { value: "#6366f1" },
+      color: { value: "#f97316" },
       shape: { type: "circle" },
       opacity: {
         value: 0.4,
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       links: {
         enable: true,
         distance: 160,
-        color: "#6366f1",
+        color: "#f97316",
         opacity: 0.12,
         width: 1,
       },
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       modes: {
         grab: {
           distance: 180,
-          links: { opacity: 0.3, color: "#8b5cf6" },
+          links: { opacity: 0.3, color: "#f59e0b" },
         },
       },
     },
